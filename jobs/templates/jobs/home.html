@@ -1,13 +1,14 @@
 
 <!doctype html>
 <html lang="en">
+  {% load staticfiles %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Album example · Bootstrap</title>
+    <meta name="author" content="Arjit">
+   
+    <title>Arjit Tiwari</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
 
@@ -44,13 +45,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Twitter</a>
+                  <a class="nav-link" href="https://twitter.com/arjit_tiwari">Twitter</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Resume</a>
+                  <a class="nav-link" href="{% static 'resume.pdf' %}">Resume</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
+                  <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
                 </li>
               </ul>
             </div>
@@ -66,6 +67,7 @@
       <p>
         <a href="mailto:arjittiwari@gmail.com" class="btn btn-primary my-2">Email Me</a>
       </p>
+      <img src="{% static 'IMG_2992.JPG' %}" height="200"></img>
     </div>
   </section>
 
